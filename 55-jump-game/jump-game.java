@@ -3,14 +3,11 @@ class Solution {
         int max = nums[0];
 
         for(int i=1; i<nums.length; i++){
-            if(i>max) return false;
-
+            if(i > max) return false;
             else{
-                max = Math.max(max, (i+nums[i]));
+                max = Math.max(max, i+nums[i]);
             }
         }
         return true;
-
-        
     }
 }
